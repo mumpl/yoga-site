@@ -1,0 +1,143 @@
+@import "mixin.scss";
+
+$color: antiquewhite;
+$color-blue: rgb(32, 65, 112);
+
+@font-face {
+    font-family: 'Gropled-Bold';
+    src: url(Gropled-Bold.otf);
+}
+
+@font-face {
+    font-family: 'Vetrino';
+    src: url(Vetrino.otf);
+}
+
+@font-face {
+    font-family: 'EdgeDisplay';
+    src: url(EdgeDisplay-Bold.otf);
+}
+
+
+body{
+    background-color: $color;
+}
+
+nav {
+    background-color: $color-blue;
+    padding: 0.5%;
+    height: auto;
+    .container {
+        @include container;
+        a {
+            font-family: 'Gropled-Bold';
+            color: $color;
+            text-align: center;
+            text-decoration: none;
+            font-size: 30px;
+            padding: 30px;
+        }
+        .main {
+            height: 70px;
+            width: 70px;
+            margin-left: auto;
+        }
+    }
+}
+main {
+    width: 100%;
+        @include container;
+        .container {
+            @include container;
+            a {
+                font-family: 'Gropled-Bold';
+                color: $color-blue;
+                text-decoration: none;
+                font-size: 30px;
+                padding: 30px;
+                text-align: center;
+            }
+            form {
+                @include form;
+            }   
+        .cell-1 {
+            margin: 20px;
+            padding: auto;
+            height: 350px;
+            width: 100%;
+            p {
+                font-size: 25px;
+                color: $color-blue
+            }
+       
+        }
+        .cell {
+            width: 100%;
+            flex-basis: 100%;
+            text-align: center;
+            height: 40px;
+            font-size: 20px;
+            margin: 30px;
+            p{
+                color: $color-blue;
+            }
+            h1{
+                font-size: 50px;
+                font-family: 'Vetrino';
+                color: $color-blue ;
+                margin: 30px;
+            }
+        }
+
+        .img-1 {
+            .scale {
+                display: inline-block; /* Строчно-блочный элемент */
+                overflow: hidden; /* Скрываем всё за контуром */
+               }
+            .scale img {
+                transition: 1s; /* Время эффекта */
+                height: 350px;
+                width: auto;
+                padding: 5px;
+                margin: 20px;
+                
+               }
+            .scale img:hover {
+                transform: scale(1.2); /* Увеличиваем масштаб */
+               }
+            figure{
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                font-family: 'Gropled-Bold';
+                color: $color-blue ;
+                font-size: 30px;
+            }
+            
+            
+        }
+    }
+}
+
+footer {
+    background-color: $color-blue;
+    padding: 0.5%;
+    height: auto;
+    .container {
+        @include container;
+        .big-text{
+            font-size: 45px;
+        }
+        .image{
+            height: 50px;
+            width: 50px;
+        }
+        p {
+            font-size:30px;
+            font-family: 'Gropled-Bold';
+            color: $color ;
+            margin: 15px;
+            padding: 15px;
+        }
+    }
+}

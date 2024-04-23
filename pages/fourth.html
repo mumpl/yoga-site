@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet">
+        <link href="style.css.map" rel="stylesheet">
+        <title>Fly yoga</title>
+        
+    </head>
+     <body>
+
+        <nav>
+            <div class="container">
+                <a href="index.html">
+                    <img class="main" src="sign.png" title="Домашняя страница">
+                </a>
+                <a href="second.html">Хатха-йога</a>
+                <a href="fourth.html">Аэро-йога</a>
+                <a href="fifth.html">Массаж</a>
+                <a href="third.html">Онлайн-запись</a>
+            </div>
+        </nav>
+
+        <main>
+            <div class="container">
+                <div class="cell">
+                    <h1>Аэро-йога</h1>
+                </div>
+                   
+                <div class="cell-1">
+                    <p>Аэройога или, как её ещё называют, антигравити-йога – это практика, которая сочетает в себе принципы йоги, растяжки, пилатеса и калланетики. Начало ей дал американский танцор и хореограф Кристофер Харрисон в 1991 году, когда создал специальные гамаки для выступлений и тренировок воздушных гимнастов. Позднее он понял, что акробатические трюки в воздухе могут быть доступны каждому, и открыл аэройогу для всех.</p>
+                    <p>Сейчас антигравити-йога — одно из самых популярных направлений фитнеса. При выполнении асан в подвешенном состоянии тело человека вытягивается, запускается механизм самообновления и улучшается общее состояние здоровья.</p>    
+                    <p>В основе аэройоги лежит взаимодействие с гамаком. Он берёт на себя часть веса тела. Благодаря силам гравитации работает главный принцип йоги в воздухе — вытяжение через расслабление.</p>
+                </div>
+
+                <img id="image" src="https://giowellness.ru/assets/images/26-07-2021/5bk26n-copy-of-image09-1399.jpg" style="height: 350px; margin: 10px;">
+
+            </main>
+
+        <footer>
+            <div class="container">
+                    
+                    <p class="big-text">YOGA CENTER</p>
+                    <p>г. Йошкар-Ола</p>
+                    <p>cт.метро Ля Рошель</p>
+                    <p>пл.Гриммо 12, офис 311б</p>
+                    <p>тел: +375 33 129 20 05</p>
+                    <img class="image" src="sign.png">
+                    <img src="card.png">
+            </div>
+        </footer>
+        
+     </body>
+
+     <script type="text/javascript"> 
+        //АНИМАЦИЯ КАРТИНКИ
+        let image = document.getElementById("image");
+            image.onclick = function() {
+                if (image.src =="https://giowellness.ru/assets/images/26-07-2021/5bk26n-copy-of-image09-1399.jpg") 
+                    image.src = "https://static.tildacdn.com/tild3431-3864-4235-a633-383332373266/IMG_5655.jpg";
+                else
+                    image.src = "https://giowellness.ru/assets/images/26-07-2021/5bk26n-copy-of-image09-1399.jpg";
+                
+            }
+               
+            </script>
+</html>
