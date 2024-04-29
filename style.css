@@ -21,8 +21,8 @@ body {
 
 nav {
   background-color: rgb(32, 65, 112);
-  padding: 0.5%;
   height: auto;
+  width: 100%;
 }
 nav .container {
   display: flex;
@@ -80,6 +80,21 @@ main .container form {
   font-family: "Gropled-Bold";
   text-align: center;
 }
+main .container .image_2 {
+  height: auto;
+  width: 250px;
+  float: right;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+main .container .image_1 {
+  height: 350px;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
 main .container .cell-1 {
   margin: 20px;
   padding: auto;
@@ -100,6 +115,7 @@ main .container .cell {
 }
 main .container .cell p {
   color: rgb(32, 65, 112);
+  width: auto;
 }
 main .container .cell h1 {
   font-size: 50px;
@@ -132,8 +148,10 @@ main .container .img-1 figure {
 
 footer {
   background-color: rgb(32, 65, 112);
-  padding: 0.5%;
-  height: auto;
+  height: 150px;
+  margin-top: 660px;
+  height: 190px;
+  width: auto;
 }
 footer .container {
   display: flex;

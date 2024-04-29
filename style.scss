@@ -18,15 +18,15 @@ $color-blue: rgb(32, 65, 112);
     src: url(EdgeDisplay-Bold.otf);
 }
 
-
 body{
     background-color: $color;
 }
 
 nav {
     background-color: $color-blue;
-    padding: 0.5%;
     height: auto;
+    width: 100%;
+    
     .container {
         @include container;
         a {
@@ -59,7 +59,23 @@ main {
             }
             form {
                 @include form;
-            }   
+            
+            } 
+            .image_2 {
+                height: auto;
+                width: 250px;
+                float:right;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+            } 
+            .image_1 {
+                height: 350px;
+                float: left;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+            } 
         .cell-1 {
             margin: 20px;
             padding: auto;
@@ -80,6 +96,7 @@ main {
             margin: 30px;
             p{
                 color: $color-blue;
+                width: auto;
             }
             h1{
                 font-size: 50px;
@@ -121,8 +138,10 @@ main {
 
 footer {
     background-color: $color-blue;
-    padding: 0.5%;
-    height: auto;
+    height: 150px;
+    margin-top: 660px;
+    height: 190px;
+    width: auto;
     .container {
         @include container;
         .big-text{
